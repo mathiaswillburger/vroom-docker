@@ -9,6 +9,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 [Vroom-express Changelog Unreleased](https://github.com/VROOM-Project/vroom-express/blob/master/CHANGELOG.md#unreleased)
 
+### Changed
+
+- bumped the runtime base image from `node:20-bookworm-slim` to `node:26-bookworm-slim` (Node.js 26 LTS): Node.js 20 is end of life and receives no fix for [CVE-2026-111497](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases) (Brotli decoder out-of-bounds write in `node:zlib`, possible remote code execution, rated high) [#99](https://github.com/VROOM-Project/vroom-docker/issues/99)
+
 ## [v1.15.0](https://github.com/VROOM-Project/vroom/releases/tag/v1.15.0) - 2026-03-17
 
 [Vroom Changelog v1.15.0](https://github.com/VROOM-Project/vroom/blob/master/CHANGELOG.md#v1150---2026-03-12)
